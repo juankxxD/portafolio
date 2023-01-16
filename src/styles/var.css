@@ -1,0 +1,24 @@
+:root {
+    --background-main: #FFF;
+    --background-app: #FFF;
+    --background-hover: black;
+    --text-primary-nav: black;
+    --text-secundary: black;
+    --background-opacity: rgba(255, 255, 255, 0.5);
+    --text-third: #58e;
+    --text-primary-hover: #FFF;
+    --shadow-header: 0px 4px 6px -1px rgba(46,74,117,0.29)
+}
+
+[data-theme='dark'] {
+    --background-main: #151515;
+    --background-app: #1b1b1b;
+    --background-hover: black;
+    --text-primary-nav: #FFF;
+    --text-secundary: #58e;
+    --background-opacity: rgba(8, 8, 8, 0.5);
+    --text-third: #FFF;
+    --text-primary-hover: #58e;
+    --shadow-header: 0px 0px 6px -1px rgba(85,136,238,1);
+
+}
