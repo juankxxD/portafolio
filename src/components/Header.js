@@ -8,8 +8,7 @@ import MoonTheme from '../assets/MoonTheme.js';
 const Header = () => {
   const { texts, handleLanguage } = useContext(LanguageContext);
   const [theme, handleChange] = useTheme('light');
-  console.log(theme);
-  // alert (window.navigator.language)
+
   return (
     <header>
       <div className='logo'>
@@ -38,10 +37,10 @@ const Header = () => {
         </label>
         <nav className='nav-header'>
           <ul className='list-header'>
-            <li className='item-header'><a href='#page-1'>{texts.headerItemAboutMe}</a></li>
-            <li className='item-header'><a>{texts.headerItemExperience}</a></li>
-            <li className='item-header'><a>{texts.headerItemEducation}</a></li>
-            <li className='item-header'><a>{texts.headerItemContact}</a></li>
+            <li className='item-header'><a href='#AboutMe'>{texts.headerItemAboutMe}</a></li>
+            <li className='item-header'><a href='#Experience'>{texts.headerItemExperience}</a></li>
+            <li className='item-header'><a href='#Education'>{texts.headerItemEducation}</a></li>
+            <li className='item-header'><a href='#Contact'>{texts.headerItemContact}</a></li>
           </ul>
         </nav>
       </div>

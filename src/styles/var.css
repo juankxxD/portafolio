@@ -6,6 +6,7 @@
     --text-secundary: black;
     --background-opacity: rgba(255, 255, 255, 0.5);
     --text-third: #58e;
+    --text-tittle: #58e;
     --text-primary-hover: #FFF;
     --shadow-header: 0px 4px 6px -1px rgba(46,74,117,0.29)
 }
@@ -18,6 +19,7 @@
     --text-secundary: #58e;
     --background-opacity: rgba(8, 8, 8, 0.5);
     --text-third: #FFF;
+    --text-tittle: #58e;
     --text-primary-hover: #58e;
     --shadow-header: 0px 0px 6px -1px rgba(85,136,238,1);
 

@@ -42,6 +42,10 @@ header {
     justify-content: center;
 }
 
+.options svg{
+    cursor: pointer;
+}
+
 .list-header {
     display: flex;
     justify-content: end;
@@ -57,7 +61,11 @@ header {
 .item-header a {
     text-decoration: none;
     color: var(--text-primary-nav);
-    white-space: nowrap
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .item-header:hover {
@@ -171,7 +179,6 @@ header {
         height: calc(100vh - 6rem);
         width: 100vw;
         background-color: var(--background-opacity);
-        cursor: move;
     }
 
     .list-header {
@@ -184,6 +191,7 @@ header {
         padding: 1rem 0;
         justify-content: center;
         position: relative;
+        cursor: pointer;
     }
 
     .item-header::before {

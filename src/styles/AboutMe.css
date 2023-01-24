@@ -1,0 +1,74 @@
+#AboutMe {
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-download-about-me {
+    display: flex;
+    border: 2px solid var(--text-tittle);
+    border-radius: 10px;
+    background-color: var(--text-tittle);
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.container-download-about-me p {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.container-download-about-me svg {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+}
+
+.container-download-about-me, .container-download-about-me p, .container-download-about-me svg {
+    transition: all ease 0.7s;
+}
+
+.container-download-about-me:hover {
+    background-color: var(--text-primary-nav);
+    
+}
+.container-download-about-me:hover p, .container-download-about-me:hover svg {
+    color: var(--text-tittle);
+}
+
+@media (min-width: 640px){
+
+    .container-tittle-about-me {
+        width: 80%;
+        height: 20%;
+    }
+    
+    .container-paragraph-about-me {
+        width: 80%;
+        height: 30%;
+    }
+
+    .container-paragraph-about-me {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    .container-tittle-about-me {
+        width: 80%;
+        height: 10%;
+    }
+    
+    .container-paragraph-about-me {
+        width: 80%;
+        height: 40%;
+    }
+
+    .container-paragraph-about-me {
+        font-size: 1.3rem;
+    }
+}

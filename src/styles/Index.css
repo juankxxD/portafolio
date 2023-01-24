@@ -1,0 +1,10 @@
+h2 {
+    text-align: center;
+    color: var(--text-tittle);
+    font-size: 3em;
+}
+
+p {
+    color: var(--text-primary-nav);
+    text-align: justify;
+}

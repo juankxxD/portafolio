@@ -10,9 +10,11 @@ const translations = {
     headerItemExperience: "Experiencia",
     headerItemEducation: "Educacion",
     headerItemContact: "Contactarme",
-    buttonLogout: "Cerrar Sesión",
-    mainWelcome: "Bienvenid@ invitad@",
-    mainHello: "Hola Usuari@",
+    textAboutMe: `Joven de 21 años con ciudadania colombiana, estudiante de Tecnología en sistemas de 
+    información proximo a grado con buenas relaciones interpersonales, responsable y con muchas
+    cualidades más que podrás ver mas abajo en mi cv :)`,
+    download: "Descargar cv",
+    textExperience: "Experiencia",
     mainContent: "Mi contenido principal",
     footerTitle: "Mi pié de página",
   },
@@ -22,9 +24,11 @@ const translations = {
     headerItemExperience: "Experience",
     headerItemEducation: "Education",
     headerItemContact: "Contact",
-    buttonLogout: "Logout",
-    mainWelcome: "Welcome Guest",
-    mainHello: "Hello User",
+    textAboutMe: `21 year old young man with Colombian citizenship, 
+    student of Information Systems Technology next to degree with good interpersonal 
+    relationships, responsible and with many more qualities that you can see below in my cv.`,
+    download: "Download cv",
+    textExperience: "Experience",
     mainContent: "My main content",
     footerTitle: "My footer",
   },
@@ -45,7 +49,7 @@ const LanguageProvider = ({ children }) => {
     }
   };
 
-  const data = { texts, handleLanguage };
+  const data = { texts, handleLanguage, language };
 
   return (
     <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>
