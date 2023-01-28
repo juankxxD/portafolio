@@ -1,18 +1,30 @@
 import React from 'react'
 import { useTheme } from "../hook/useTheme";
+import Scroll from 'react-scroll';
 import '../styles/Header.css';
 import { useContext } from "react";
 import LanguageContext from "../context/LanguageContext";
 import MoonTheme from '../assets/MoonTheme.js';
 
-const Header = () => {
+const Link = Scroll.Link;
+const scroll = Scroll.animateScroll;
+
+const Header = ({initial}) => {
+  
   const { texts, handleLanguage } = useContext(LanguageContext);
-  const [theme, handleChange] = useTheme('light');
+  
+  const [theme, handleChange] = useTheme('dark');
+  
+  function scrollToTop() {
+    scroll.scrollToTop({
+      containerId:"main",
+    });
+  }
 
   return (
-    <header>
-      <div className='logo'>
-        <a href='#'><p>Juan Pablo Ospina<br></br><span>{texts.headerTitle}</span></p></a>
+    <header className={initial && 'initial-header'}>
+      <div className={initial ? 'logo initial-logo' : 'logo'} onClick={scrollToTop}>
+        <p>Juan Pablo Ospina<br></br><span>{texts.headerTitle}</span></p>
       </div>
       <input type='checkbox' id='menu-check' />
       <label id='menu' htmlFor='menu-check'>
@@ -37,10 +49,10 @@ const Header = () => {
         </label>
         <nav className='nav-header'>
           <ul className='list-header'>
-            <li className='item-header'><a href='#AboutMe'>{texts.headerItemAboutMe}</a></li>
-            <li className='item-header'><a href='#Experience'>{texts.headerItemExperience}</a></li>
-            <li className='item-header'><a href='#Education'>{texts.headerItemEducation}</a></li>
-            <li className='item-header'><a href='#Contact'>{texts.headerItemContact}</a></li>
+            <li className='item-header'><Link to="AboutMe" activeClass='a-selected' spy={true} smooth={true} offset={-60} duration={300} containerId="main">{texts.headerItemAboutMe}</Link></li>
+            <li className='item-header'><Link to='Experience' activeClass='a-selected' spy={true} smooth={true} offset={-60} duration={300} containerId="main">{texts.headerItemExperience}</Link></li>
+            <li className='item-header'><Link to='Education' activeClass='a-selected' spy={true} smooth={true} offset={-60} duration={300} containerId="main">{texts.headerItemEducation}</Link></li>
+            <li className='item-header'><Link to='Contact' activeClass='a-selected' spy={true} smooth={true} offset={-60} duration={300} containerId="main">{texts.headerItemContact}</Link></li>
           </ul>
         </nav>
       </div>

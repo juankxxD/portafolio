@@ -6,19 +6,19 @@ import pdfEs from '../assets/pdfs/CVJuanEs.pdf';
 import pdfEn from '../assets/pdfs/CVJuanEn.pdf';
 
 export default function AboutMe() {
-
+    
     const { texts, language } = useContext(LanguageContext);
     return (
-        <section className='About-me' id='AboutMe'>
+        <section className='About-me AboutMe' id='AboutMe'>
             <div className='container-tittle-about-me'>
                 <h2>{texts.headerItemAboutMe}</h2>
             </div>
             <div className='container-paragraph-about-me'>
                 <p>{texts.textAboutMe}</p>
             </div>
-            <a className='container-download-about-me' 
-            download={language === 'es' ? 'CV Juan Ospina Es' : 'CV Juan Ospina En'} 
-            href={language === 'es' ? pdfEs : pdfEn}>
+            <a className='container-download-about-me'
+                download={language === 'es' ? 'CV Juan Ospina Es' : 'CV Juan Ospina En'}
+                href={language === 'es' ? pdfEs : pdfEn}>
                 <p>{texts.download}</p>
                 <svg aria-hidden="true"
                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

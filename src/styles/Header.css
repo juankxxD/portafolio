@@ -6,12 +6,14 @@ header {
     -webkit-box-shadow: var(--shadow-header);
     -moz-box-shadow: var(--shadow-header);
     box-shadow: var(--shadow-header);
+    transition: all ease 0.7s;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .logo p::first-letter {
@@ -55,6 +57,7 @@ header {
     padding: 0 1rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
     transition: all ease 0.7s;
 }
 
@@ -64,8 +67,8 @@ header {
     white-space: nowrap;
     height: 100%;
     width: 100%;
-    display: flex;
     align-items: center;
+    display: contents
 }
 
 .item-header:hover {
@@ -78,6 +81,11 @@ header {
     color: var(--text-primary-hover);
 }
 
+.item-header .a-selected {
+    text-decoration: underline;
+    color: #58e;
+}
+
 .select-lenguage {
     border-radius: 5px;
     background-color: var(--background-main);
@@ -88,6 +96,36 @@ header {
 #menu,
 #menu-check-tablet,
 #menu-tablet {
+    display: none;
+}
+
+.initial-header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initial-header .initial-logo {
+    height: 4rem;
+    width: 10rem;
+    display: inline-block;
+    animation: opacity-logo 2s infinite;
+}
+
+@keyframes opacity-logo {
+    0% {opacity: 1;}
+
+    50% {opacity: 0;}
+
+    100% {opacity: 1;}
+}
+
+.initial-header div, 
+.initial-header label, 
+.initial-header input, 
+.initial-header nav,
+.initial-header #menu  {
     display: none;
 }
 
@@ -120,6 +158,10 @@ header {
 
     .item-header {
         height: 100%;
+    }
+
+    .item-header a {
+        display: flex;
     }
 }
 

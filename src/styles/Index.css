@@ -8,3 +8,12 @@ p {
     color: var(--text-primary-nav);
     text-align: justify;
 }
+
+.active-scroll-spy {
+    background-color: yellowgreen;
+  }
+  
+
+  html {
+    scroll-padding-top: 0px; /* height of your navbar */
+  }
