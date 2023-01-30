@@ -14,8 +14,14 @@ const translations = {
     información proximo a grado con buenas relaciones interpersonales, responsable y con muchas
     cualidades más que podrás ver mas abajo en mi cv :)`,
     download: "Descargar cv",
-    textExperience: "Experiencia",
-    mainContent: "Mi contenido principal",
+    titleExperience: "Experience",
+    textExperience: `6 meses como aprendiz en practicas universitarias en la empresa OLSOFTWARE 
+    en las cuales las principales funciones fueron:
+    `,
+    experienceDocumentation: "Documentacion",
+    experienceDDBB: "Diseño de base de datos",
+    experienceBackend: "Backend",
+    experienceFrontend: "Frontend",
     footerTitle: "Mi pié de página",
   },
   en: {
@@ -28,8 +34,13 @@ const translations = {
     student of Information Systems Technology next to degree with good interpersonal 
     relationships, responsible and with many more qualities that you can see below in my cv.`,
     download: "Download cv",
-    textExperience: "Experience",
-    mainContent: "My main content",
+    titleExperience: "Experience",
+    textExperience: `6 months as an apprentice in university practices in the company OLSOFTWARE 
+    in which the main functions were:`,
+    experienceDocumentation: "Documentation",
+    experienceDDBB: "database design",
+    experienceBackend: "Backend",
+    experienceFrontend: "Frontend",
     footerTitle: "My footer",
   },
 };

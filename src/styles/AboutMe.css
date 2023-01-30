@@ -42,33 +42,33 @@
 
 @media (min-width: 640px){
 
-    .container-tittle-about-me {
+    .container-tittle {
         width: 80%;
         height: 20%;
     }
     
-    .container-paragraph-about-me {
+    .container-paragraph {
         width: 80%;
         height: 30%;
     }
 
-    .container-paragraph-about-me {
+    .container-paragraph {
         font-size: 1.5em;
     }
 }
 
 @media (max-width: 640px) {
-    .container-tittle-about-me {
+    .container-tittle {
         width: 80%;
         height: 10%;
     }
     
-    .container-paragraph-about-me {
+    .container-paragraph {
         width: 80%;
         height: 40%;
     }
 
-    .container-paragraph-about-me {
+    .container-paragraph {
         font-size: 1.3rem;
     }
 }

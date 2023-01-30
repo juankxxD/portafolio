@@ -10,10 +10,10 @@ export default function AboutMe() {
     const { texts, language } = useContext(LanguageContext);
     return (
         <section className='About-me AboutMe' id='AboutMe'>
-            <div className='container-tittle-about-me'>
+            <div className='container-tittle'>
                 <h2>{texts.headerItemAboutMe}</h2>
             </div>
-            <div className='container-paragraph-about-me'>
+            <div className='container-paragraph'>
                 <p>{texts.textAboutMe}</p>
             </div>
             <a className='container-download-about-me'

@@ -13,6 +13,7 @@
 section {
     height: calc(100vh - 6rem);
     width: 100%;
+    display:flex
 }
 
 main {
